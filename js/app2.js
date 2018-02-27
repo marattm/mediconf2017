@@ -17,19 +17,19 @@ app.get('/dashboard', function(req, res) {
     res.sendFile(path.join(__dirname + '/../html/dashboard.html'));
 });
 
-
-app.get('/dashboard/sendSMS', function(req, res) {
-    // res.sendFile(path.join(__dirname + '/../html/dashboard.html'));
-    client.messages.create({
-    to: '+19174598797',  // Text this number
-    from: '+13142079612', // From a valid Twilio number
-    body: "https://189e1465.ngrok.io"
-	})
-// .then((message) => console.log(message.sid));
-	.then(function(message){
-		console.log('message sent');
-	});
-});
+// Send an SMS to the user
+// app.get('/dashboard/sendSMS', function(req, res) {
+//     // res.sendFile(path.join(__dirname + '/../html/dashboard.html'));
+//     client.messages.create({
+//     to: '',  // Text this number +13126102070
+//     from: '', // From a valid Twilio number +13142079612
+//     body: "https://8add1e4d.ngrok.io message from MediConf, Powered by Twilio, Vidyo, Google Translate API."
+// 	})
+// // .then((message) => console.log(message.sid));
+// 	.then(function(message){
+// 		console.log('message sent');
+// 	});
+// });
 
 
 
