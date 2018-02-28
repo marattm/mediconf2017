@@ -13,9 +13,18 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/../index.html'));
 });
 
-app.get('/dashboard', function(req, res) {
+app.get('/dashboard', function (req, res) {
     res.sendFile(path.join(__dirname + '/../html/dashboard.html'));
 });
+
+app.get('/translate', function (req, res) {
+    res.sendFile(path.join(__dirname + '/../html/translate.html'));
+});
+
+app.get('/chat', function (req, res) {
+    res.sendFile(path.join(__dirname + '/../websocket-nodejs/frontend.html'));
+});
+
 
 // Send an SMS to the user
 // app.get('/dashboard/sendSMS', function(req, res) {
