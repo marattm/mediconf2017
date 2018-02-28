@@ -14,3 +14,33 @@ client.messages
     body: 'https://5c0d7cfa.ngrok.io/hackathon/mediconf2017/',
   })
   .then((message) => console.log(message.sid));
+
+
+          /*
+        function sendSMS(){
+          console.log("Hey mannnnnnnnnnn");
+          $.ajax({
+            console.log("hello")
+            type: 'GET',
+            url: "/dashboard/sendSMS",
+            success:function(data){
+              console.log('Succesfuly sent');
+            }
+          });
+        }*/
+
+        // function sendSMS(){
+        //   var xhr = new XMLHttpRequest(); //This is all you would need for IE7+
+        //   var xhr_results = '';
+        //   if (xhr != null) {
+        //       console.log("hello1")
+        //       xhr.open("GET", "/dashboard/sendSMS", true);
+        //       xhr.onreadystatechange = function(){
+        //           if (xhr.readyState === 4) {
+        //             console.log("hello2")
+        //             xhr_results = xhr.responseText;
+        //           }
+        //       };
+        //       xhr.send();
+        //   }
+        // }
